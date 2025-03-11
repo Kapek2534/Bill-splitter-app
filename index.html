@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Split your bill</h1>
+    <div class="bill-wrapper">
+      <form class="insert">
+        <div class="value">
+          <label>Bill value</label>
+          <input type="number" id="total" placeholder="Add the value od bill" />
+        </div>
+        <div class="people">
+          <label>How many?</label>
+          <input
+            type="number"
+            id="people"
+            placeholder="Add the number of people"
+          />
+        </div>
+        <div class="tip">
+          <label>Add a tip</label>
+          <input
+            type="number"
+            id="tipPercent"
+            placeholder="Add % of the total"
+          />
+        </div>
+        <div class="main-buttons">
+          <button id="splitBtn">Split!</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+        <div id="perPerson">0</div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
