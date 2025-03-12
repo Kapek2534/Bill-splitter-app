@@ -15,7 +15,7 @@ html {
 
 body {
   width: 100%;
-  background-image: url("./blurry-gradient-haikei\ \(2\).svg");
+  background-image: url("photos/blurry-gradient-haikei\ \(2\).svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -110,6 +110,7 @@ body h1::after {
   width: 70px;
   height: 55px;
   transition: 0.2s ease-in-out;
+  pointer-events: none;
 
   &:active {
     filter: brightness(150%);
