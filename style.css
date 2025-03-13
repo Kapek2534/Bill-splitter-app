@@ -87,10 +87,14 @@ body h1::after {
   border-bottom: 3px solid #d979e3;
   padding: 10px 15px;
   border-radius: 5px 5px 0 0;
-}
 
-.wrap input::placeholder {
-  color: #663060;
+  &:focus::placeholder {
+    color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .tip-buttons {
@@ -112,8 +116,8 @@ body h1::after {
   transition: 0.2s ease-in-out;
   pointer-events: none;
 
-  &:active {
-    filter: brightness(150%);
+  &:focus {
+    filter: brightness(150%) !important;
   }
 }
 
